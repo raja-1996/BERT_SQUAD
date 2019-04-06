@@ -1,12 +1,12 @@
 # BERT Fine Tuned Model For Question Answering SQUAD Dataset
 
-####Download fine tuned model 
+#### Download fine tuned model 
 https://drive.google.com/open?id=1S0OFdGhWZq8Hb3Sj3JVo2dxMnHLvSG6w
 
-##Instructions
+## Instructions
 
 
-####Install all requirements
+#### Install all requirements
 ```
 pip install -r requirements.txt
 ```
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-####Make post request to following url
+#### Make post request to following url
 ```
 http://127.0.0.1:8000/bert_squad/squad/
 
