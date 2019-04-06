@@ -1,7 +1,8 @@
 
 #Ignore folder bert_squad_app/bert_squad/squad_bert_base
 
-bert_squad_app/bert_squad/squad_bert_base
+bert_squad_app/bert_squad/squad_bert_base/*
+!bert_squad_app/bert_squad/squad_bert_base/.gitkeep
 
 #Ignore .pyc files
 *.pyc
