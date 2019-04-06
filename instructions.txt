@@ -1,0 +1,24 @@
+
+
+#Install all requirements
+pip install -r requirements.txt
+
+# start django Server
+python manage.py runserver
+
+# Make post request to following url
+http://127.0.0.1:8000/bert_squad/squad/
+
+form-data
+'paragraph':  ENTER PARAGRAPH TEXT
+'question' : ENTER QUESTION TEXT
+
+
+curl -X POST \
+  http://127.0.0.1:8000/bert_squad/squad/ \
+  -H 'Postman-Token: becabec0-59f7-4f84-b107-d160c94fd766' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+  -F 'paragraph=Phew, what was that? Not for the first time this season of course. Dre Russ is Superman for KKR, just that he doesn'\''t wear the cape. The equation read 68 off 26 when he came into bat and when skipper DK fell, KKR needed 54 off 18. It was getting tougher, even with the kind of ground this is. And then, Dre Russ happened. Smoked three sixes off the 18th over to set the tone and then, as if it was child'\''s play, made a mockery of Southee in the penultimate by hammering another four sixes and a four. It was a mind-numbing assault and in the blink of an eye, scores were level. The target of 206 was competitive and RCB were in it for most part despite cameos from Lynn, Rana and Uthappa. Negi'\''s spell kept them afloat and they even edged marginally ahead. That'\''s before Russell woke up. Once he did, there was no stopping him. What it meant was that a spectacular Kohli-De Villiers show earlier in the evening ended on the losing side. 0-5 for RCB and it'\''s getting harder.' \
+  -F 'question=who is the superman for KKR?'
+
